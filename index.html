@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DUNE</title>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'Pretendard-Black';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+		    font-weight: 900;
+		    font-style: normal;}
+		@font-face {
+		    font-family: 'Pretendard-ExtraBold';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+		    font-weight: 800;
+		    font-style: normal;}
+		@font-face {
+		    font-family: 'Pretendard-Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+		    font-weight: 700;
+		    font-style: normal;}
+		@font-face {
+		    font-family: 'Pretendard-Medium';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+		    font-weight: 500;
+		    font-style: normal;}
+		@font-face {
+		    font-family: 'Pretendard-Regular';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+		    font-weight: 400;
+		    font-style: normal;}
+		@font-face {
+		    font-family: 'Pretendard-Thin';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+		    font-weight: 100;
+		    font-style: normal;}
+
+		@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@500;700&display=swap');
+
+		.kodchasan-medium {
+		  font-family: "Kodchasan", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;}
+
+		.kodchasan-bold {
+		  font-family: "Kodchasan", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;}
+
+		body{background-color: black;}
+		h1, h2, h3, p, div{margin: 0;padding: 0;}
+		hr{border: none;
+		  border-top: 1px solid #E88D41;
+		  margin: 0 auto; padding: 10px 0px;}
+		ul{display: flex;}
+		div{display: block;}
+		img{margin: auto;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;}
+		h2{font-family: 'kodchasan-bold';
+			text-align: center;
+			font-size: 48px;
+			letter-spacing: 45%;
+			color: #E88D41;}
+		h3{font-family: 'Pretendard-Bold';
+			font-size: 36px;
+			text-align: center;
+			line-height: 45px;
+			color: #E88D41;}
+		p{font-family: 'Pretendard-light';font-size: 16px;
+			line-height: 30px;
+			color: white;padding-top: 20px;}
+		.wrap{width: 1000px;
+			padding-top: 40px;
+			margin: auto;
+			position: relative;}
+		nav .menu{display: flex;
+					width: 400px; margin: auto;}
+		nav .menu li{width: 33.3%;
+					list-style-type: none;}
+		nav .menu li a{
+					text-align: center;
+					display: block;
+					text-decoration: none;
+					color:#E88D41;}
+		nav .menu li a:hover{color: white;}
+		.menuflex{display:flex;
+					justify-content: space-between}
+		.flex{display: flex; flex-wrap: wrap;justify-content: center;}
+		.mini-title{font-size: 12px;
+			letter-spacing: 20%;}
+		.duniverse{width: 900px;
+			height: 450px;
+			margin: auto; border: 1px solid #E88D41;}
+		.duniverse p{width: 600px;text-shadow:rgba(0,0,0,0.7) 3px blur 40% opacity; }
+
+
+		.text-overlay {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  padding: 20px;
+		  color: black;
+		  background-color: rgba(0, 0, 0, 0.7);}
+		.popup {
+	      display: none;
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      width: 100%;
+	      height: 100%;
+	      z-index: 9999;}
+
+	    .popup-content {
+	      position: absolute;
+	      top: 50%;
+	      left: 50%;
+	      transform: translate(-50%, -50%);
+	      background-color: black;
+	      border: 1px solid #E88D41;
+	      padding: 20px;}
+
+	    .close {
+	      position: absolute;
+	      top: 10px;
+	      right: 10px;
+	      color: #E88D41;
+	      cursor: pointer;}
+
+	    .underline{text-decoration-line: underline;
+	    	text-decoration-color: #E88D41;
+	    	text-decoration-style: solid;
+	    	text-decoration-thickness:1px;}
+	    .follwing-nav{width: 150px;position: sticky;top: 0;padding: 5px;}
+	    .width300{width: 300px;margin-right:30px;}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="wrap menuflex">
+			<div class="logo"></div>
+			<ul class="menu kodchasan-medium">
+				<li>
+					<a href="#aaa">DUNIVERSE</a>
+				</li>
+				<li>
+					<a href="#bbb">SPICE</a>
+				</li>
+				<li>
+					<a href="#ccc">POLITICAL<br>STRUCTURE</a>
+				</li>
+				<li>
+					<a href="#ddd">FILM</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<header class="wrap">
+		<img src="title.png" style="size: 80%;align-content: center;">
+		<div style="padding-top: 100px;">
+			<h2>TRAPPIST</h2>
+			<img src="trappist.png">
+		</div>
+	</header>
+	<section class="wrap">
+		<h2>DUNIVERSE</h2>
+		<hr style="width: 300px;">
+		<h2 class="mini-title">The things you should know about before you watch DUNE</h2>
+		<div class="duniverse" style="background-image: url(duniverse1.png);margin-top: 50px;">
+			<p style="margin: auto; padding-top: 40px; ">과거의 사람들은 자신들이 자유로워지기 위해 생각하는 기능을 기계에 넘겼습니다. 하지만 기계를 가진 소수의 사람들이 다른 사람들을 노예로 삼는 결과를 낳았고 사람들은 이에 저항해 반기계<br>운동 ‘부틀리안 지하드’를 일으키게 됩니다.</p>
+		</div>
+		<div class="duniverse" style="background-image: url(duniverse2.jpg);margin-top: 50px;">
+			<p style="margin: auto; padding-top: 40px; ">덕분에 ‘인간의 정신을 본 뜬 기계를 만들어서는 안 된다.’ 라는 문장이 탄생했고 인공 지능을 개발하는 대신 인간의 정신과 육체를 수련하는, 인간의 잠재력에 중심을 둔 극단적인 인간 중심주의 방향으로 역사가 발전됩니다. </p>
+		</div>
+		<div class="duniverse" style="background-image: url(duniverse3.png);margin-top: 50px;">
+			<p style="margin: auto; padding-top: 40px; ">인공지능과 사고하는 기계에 대한 전쟁인 부틀리안 지하드 이후, 인류는 컴퓨터와 같은 고도의 기술을 사용하는 것이 금지되었고, 이로 인해 우주 항행을 위한 새로운 방법이 필요하게 되었습니다. 이때 우주 조합이라는 단체가 스파이스로 얻은 예지력을 통해 안전한 항로를 찾는 방법을 발견하게 됩니다.</p>
+		</div>
+		<div class="duniverse" style="background-image: url(duniverse4.png);margin-top: 50px;">
+			<p style="margin: auto; padding-top: 40px; ">우주 조합 내 파일럿들로 구성된 네비게이터 길드의 변이인간들은 스파이스를 대량으로 섭취하여 우주선을 안전하게 조종할 수 있는 예지력을 갖게 되었습니다. 그들은 미래를 보고 수많은 항로를 시뮬레이션한 뒤 우주선이 장애물과 부딪히지 않는 길을 선별해 내  계산합니다. 오로지 스파이스로 얻은 예지력을 통해 안전한 항로를 찾았기 때문에 스파이스에 대한 의존도가 높아졌으며, 우주 조합은 우주 항행 및 교역을 독점하게 되었습니다.</p>
+		</div>
+		<div class="duniverse" style="background-image: url(duniverse5.jpg);margin-top: 50px;">
+			<p style="margin: auto; padding-top: 40px; ">결국 스파이스는 매우 필수적인 물질이 되었으며, 스파이스를 차지하기 위해 아라키스를 무대로 많은 이권다툼이 일어나게 됩니다.</p>
+		</div>
+	</section>
+	<section class="wrap">
+		<div style="width: 600px;margin: auto;alt=(arrakis)"onclick="openPopup()">
+			<img src="arrakis.png">
+		</div>
+		<div id="popup" class="popup">
+		    <div class="popup-content" style="width: 500px;margin: auto;">
+		      <h2>DUNE</h2>
+		      <h2 style="font-size: 24px;">ARAKIS</h2>
+		      <hr style="width: 180px;">
+		      <h2 class="mini-title">DESERT PLANET</h2>
+		      <p style="text-align: center;">아라키스(Arrakis)는 듄 시리즈에서 가장 중요한 행성으로,"듄(Dune)"이라는 별명으로도 불립니다.</p>
+		      <p style="text-align: center;">아라키스는 듄 시리즈의 중심 무대로, 스토리의 핵심 사건들이 이 행성에서 벌어집니다. 사막, 스파이스, 프레멘, 모래 벌레 등 아라키스의 특징적인 요소들은 듄 세계관을 상징합니다.</p>
+		      <span class="close" onclick="closePopup()">&times;</span>
+		    </div>
+		  </div>
+
+		  <script>
+		    function openPopup() {
+		      document.getElementById("popup").style.display = "block";}
+
+		    function closePopup() {
+		      document.getElementById("popup").style.display = "none";}
+		  </script>
+	</section>
+	<section class="wrap">
+		<h2>SPICE</h2>
+		<hr style="width: 300px;">
+		<h2 class="mini-title">Spice-melange</h2>
+		<div style="width: 900px;margin: auto; padding-top: 50px;">
+			<img src="spice1.jpg" style=";height: 310px;border: 1px solid #E88D41;">
+			<div class="flex">
+				<div style="width: 400px;">
+					<p>우주에서 가장 비싼 물질<br>스파이스 한 줌이면 집 한 채를 살 수 있습니다.</p>
+					<p>섭취 시 효과 : 수명 연장과 예지력</p>
+					<p>스파이스가 비싼 이유는 초광속 성간 여행을 하기 위해 꼭 필요한 물질이기 때문입니다.<br>듄 세계관에서는 흔히 대가문이 등장하고 이들은 행성(계)를 영지로 두는 가문들이 존재하는데, 그들에게 스파이스는 우리에게 석유나 반도체처럼 필수적인 재료입니다.</p>
+				</div>
+				<div style="width: 400px; margin-left: 30px;">
+					<p>석유나 반도체처럼 스파이스 자체가 연료 역할이나 엔진 역할을 하는 것은 아니며, 우주 항로를 예지하는 데에 필수적인 물질입니다.</p>
+					<p>이러한 스파이스가 오로지 아라키스 행성에서만 생성되면서 희소성은 더욱 강해지고 모든 이권의 중심이 되는 결과를 낳습니다.</p>
+					<p>스파이스 멜란지는 듄 세계관에서 권력, 욕망, 종교, 문화 등 다양한 측면을 아우르는 핵심 요소입니다. 스파이스를 둘러싼 갈등과 경쟁은 듄 시리즈의 중심 주제 중 하나이며, 등장인물들의 운명에 결정적인 영향을 미칩니다.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wrap">
+		<div style="height: 750px;background-image: url(Diamond.png);">
+			<div class="flex" style="padding-top: 120px; ">
+				<div style="width: 170px;">
+					<h3 style="color: black;">희소성</h3>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스는 아라키스 행성에서만 발견되는 희귀한 물질입니다.</p>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 극한의 환경과 거대 모래 벌레로 인해 채취가 어렵고 위험합니다.</p>
+				</div>
+				<div style="width: 170px;">
+					<h3 style="color: black;">항정신성</h3>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스를 섭취하면 정신적 능력이 확장되고, 예지력과 같은 특별한 능력을 얻을 수 있습니다.</p>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 과다 복용 시 중독되거나 부작용이 나타날 수 있습니다.</p>
+				</div>
+				<div style="width: 170px;">
+					<h3 style="color: black;">항노화 효과</h3>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스는 노화를 지연시키고 수명을 연장하는 효과가 있습니다.</p>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 귀족들과 황제는 스파이스를 이용해 장수하고 권력을 유지합니다.</p>
+				</div>
+			</div>
+			<div class="flex" style="padding-top: 150px;">
+				<div style="width: 170px;">
+					<h3 style="color: black;">우주 항행 필수품</h3>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스는 나비게이터들이 우주 항행을 하는 데 필수적인 물질입니다.</p>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스를 통해 깨달음을 얻은 나비게이터들은 안전하게 우주선을 조종할 수 있습니다.</p>
+				</div>
+				<div style="width: 170px;">
+					<h3 style="color: black;">경제적 가치</h3>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스는 은하 제국에서 가장 귀중한 자원으로, 엄청난 경제적 가치를 지닙니다.</p>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스 무역을 둘러싼 권력 다툼이 듄 시리즈의 주요 갈등 중 하나입니다.</p>
+				</div>
+				<div style="width: 170px;">
+					<h3 style="color: black;">프레맨의<br>문화</h3>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 프레멘 족은 스파이스를 신성한 물질로 여기며, 그들의 문화와 의식에 스파이스를 활용합니다.</p>
+					<p style="color: black;font-size: 11px;line-height: 18px;">- 스파이스는 프레멘 족의 정체성과 운명에 깊이 연관되어 있습니다.</p>
+				</div>
+			</div>
+			<div class="duniverse" style="background-image: url(zendaya.png);margin: 150px 0px 0px 50px;">
+			<h3 style="font-size: 24px;">스파이스에 중독되면 눈이 파란색으로 변합니다.</h3>	
+			</div>
+		</div>
+	</section>
+	<section class="wrap" style="padding-top: 700px;">
+		<p style="text-align: center; padding-bottom: 60px;">결국 듄은,</p>
+		<h3 style="line-height: 60px;">스파이스를 둘러싼 음모와 계략<br>스파이스를 지배하는 자가 우주를 지배한다<br>Power over spice is power over all</h3>
+		<img src="spice-hand.png">
+		<p style="text-align: center; padding-top: 60px;">라는 큰 흐름을 중심으로 이야기가 전개됩니다.</p>
+	</section>
+	<section class="wrap" style="padding-top: 100px;">
+		<h2>POLITICAL STRUCTURE</h2>
+		<img src="political.png">
+		<div>
+			<img src="nav1.png" class="follwing-nav">
+			<div>
+				<img src="choam.png" style="width: 330px;margin-left: 335px;">
+				<h2>CHOAM</h2>
+				<hr style="width: 330px;">
+				<div class="flex">
+					<p class="width300"></p>
+					<p class="width300">초암 공사는 스파이스를 독점 공급합니다.<br>어떤 가문이 스파이스 채굴감독권을 갖고 있건 <br>반드시 이 회사를 통해 스파이스를 거래해야 합니다. 통나무, 당나귀, 말 , 소, 똥, 상어 등 우주 조합이 운반할 수 있는 모든 것을 취급합니다.</p>
+					<p class="width300">다만 가문들이 초암 공사의 이익에 의존하고 있고 그 이익은 상당부분 스파이스라는 물질 하나에서 나오고 있습니다. 초암공사를 통하지 않고 스파이스를 거래하는 자들을 밀수꾼(Smugglers)이라고 부릅니다.</p>
+				</div>
+				<div class="flex" style="padding-top: 50px;">
+					<div style="width: 210px;"></div>
+					<div style="width: 180px;">
+						<img src="choam.png">
+					</div>
+					<div style="width: 180px;"></div>
+					<div style="width: 180px;"></div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	<section class="wrap"></section>
+	<section class="wrap"></section>
+	<section class="wrap"></section>
+	<section class="wrap"></section>
+	<footer></footer>
+</body>
+</html>
